@@ -19,13 +19,6 @@ const loop = setInterval(() => {
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     const cloudsPosition = clouds.offsetLeft;
 
-    console.log(marioPosition);
-
-    if (pipePosition <= 10 && pipePosition > -3) {
-        pontuacao++;
-        console.log(pontuacao);
-        document.querySelector('.value-pontuacao').innerHTML = pontuacao;
-    };
 
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
